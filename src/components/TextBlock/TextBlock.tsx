@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./TextBlock.module.scss";
 import ConvertButton from "../ConvertButton/ConvertButton";
+import { converter } from "../../scripts/converter";
 
 export default function TextBlock() {
   const [inputText, setInputText] = useState<string>("");
@@ -11,7 +12,7 @@ export default function TextBlock() {
   };
 
   const handleTransformClick = () => {
-    setOutputText(inputText.charAt(0).toUpperCase() + inputText.slice(1));
+    setOutputText(converter(inputText));
   };
 
   return (
