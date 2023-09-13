@@ -1,13 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.scss';
+import styles from './App.module.scss';
+//import TestComponent from './components/TestComponent/TestComponent';
+import TextBlock from './components/TextBlock/TextBlock';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      ssss
+    <div className={styles.App}>
+      <TextBlock/>
     </div>
   );
 }
-
-export default App;

@@ -1,0 +1,21 @@
+.ConvertButton {
+    height: 30px;
+    width: 30%;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,22,22,0) 0%, rgba(36,3,3,0.4486045597484277) 100%, rgba(0,0,0,1) 100%);
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+    transition: .5s all;
+}
+
+.ConvertButton:hover {
+    transform: scale(1.01);
+    opacity: .5;
+}
+
+.ConvertButton:active {
+    transform: (1.03);
+    opacity: .3;
+    background-color: greenyellow;
+}
