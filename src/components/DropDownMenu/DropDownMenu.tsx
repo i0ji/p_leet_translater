@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./DropDownMneu.module.scss";
+import "./DropDownMenu.scss";
 import Select from "react-select";
 
 const options = [
@@ -8,15 +8,27 @@ const options = [
   { value: "hl", label: "|-|42[) 1337" },
 ];
 
-export default function DropDownMenu(props: any) {
-
-  const [selectedLeve, setSelectedLevel] = useState("sl");
-
-  return <Select options={options} 
-  classNames={{
-    control: (state) =>
-      state.isFocused ? 'red' : 'yellow',
-  }}
-  
-   />;
+interface ChildProps {
+  onOptionChange: (selectedOption: any) => void;
 }
+
+export default function DropDownMenu(props: any) {
+  const handleOptionChange = (selectedOption: any) => {
+    props.onOptionChange(selectedOption);
+  };
+
+  return (
+    <Select
+      onChange={handleOptionChange}
+      options={options}
+      placeholder={"choose your destiny"}
+    />
+  );
+}
+
+// styles={{
+//   control: (baseStyles, state) => ({
+//     ...baseStyles,
+//     borderColor: state.isFocused ? "grey" : "red",
+//   }),
+// }}

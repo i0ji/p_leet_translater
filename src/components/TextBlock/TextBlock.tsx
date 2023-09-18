@@ -7,6 +7,12 @@ import { converter } from "../../scripts/converter";
 export default function TextBlock() {
   const [inputText, setInputText] = useState<string>("");
   const [outputText, setOutputText] = useState<string>("");
+  const [selectedOption, setSelectedOption] = useState<any>(null);
+
+  const handleOptionChange = (selectedOption: any) => {
+    setSelectedOption(selectedOption);
+    console.log(selectedOption.value);
+  };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setInputText(e.target.value);
@@ -17,23 +23,21 @@ export default function TextBlock() {
   };
 
   return (
-    <div className={styles.textBlock}>
+    <div className={styles.text_block}>
       <textarea
         placeholder="Your text here"
-        className={styles.textBlock__inputBlock}
+        className={styles.text_block__input_block}
         value={inputText}
         onChange={handleInputChange}
       ></textarea>
 
-      <div className={styles.textBlock__centerBlock}>
-
+      <div className={styles.text_block__center_block}>
         <ConvertButton onClick={handleTransformClick} />
 
-        <DropDownMenu />
-
+        <DropDownMenu onOptionChange={handleOptionChange} />
       </div>
 
-      <div className={styles.textBlock__outputBlock}>{outputText}</div>
+      <div className={styles.text_block__output_block}>{outputText}</div>
     </div>
   );
 }
