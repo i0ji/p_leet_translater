@@ -9,26 +9,19 @@ const options = [
 ];
 
 interface ChildProps {
-  onOptionChange: (selectedOption: any) => void;
+  onLevelChange: (selectedLevel: any) => void;
 }
 
 export default function DropDownMenu(props: any) {
-  const handleOptionChange = (selectedOption: any) => {
-    props.onOptionChange(selectedOption);
+  const handleLevelChange = (selectedLevel: any) => {
+    props.onLevelChange(selectedLevel);
   };
 
   return (
     <Select
-      onChange={handleOptionChange}
+      onChange={handleLevelChange}
       options={options}
       placeholder={"choose your destiny"}
     />
   );
 }
-
-// styles={{
-//   control: (baseStyles, state) => ({
-//     ...baseStyles,
-//     borderColor: state.isFocused ? "grey" : "red",
-//   }),
-// }}

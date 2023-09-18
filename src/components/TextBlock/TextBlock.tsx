@@ -7,19 +7,20 @@ import { converter } from "../../scripts/converter";
 export default function TextBlock() {
   const [inputText, setInputText] = useState<string>("");
   const [outputText, setOutputText] = useState<string>("");
-  const [selectedOption, setSelectedOption] = useState<any>(null);
+  const [selectedLevel, setSelectedLevel] = useState<any>(null);
 
-  const handleOptionChange = (selectedOption: any) => {
-    setSelectedOption(selectedOption);
-    console.log(selectedOption.value);
+  const handleLevelChange = (selectedLevel: any) => {
+    setSelectedLevel(selectedLevel);
+    console.log(selectedLevel.value);
   };
+
 
   const handleInputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setInputText(e.target.value);
   };
 
   const handleTransformClick = () => {
-    setOutputText(converter(inputText));
+    setOutputText(converter(inputText, selectedLevel.value));
   };
 
   return (
@@ -34,7 +35,7 @@ export default function TextBlock() {
       <div className={styles.text_block__center_block}>
         <ConvertButton onClick={handleTransformClick} />
 
-        <DropDownMenu onOptionChange={handleOptionChange} />
+        <DropDownMenu onLevelChange={handleLevelChange} />
       </div>
 
       <div className={styles.text_block__output_block}>{outputText}</div>
