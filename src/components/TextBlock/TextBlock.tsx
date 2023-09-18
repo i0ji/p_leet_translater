@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./TextBlock.module.scss";
 import ConvertButton from "../ConvertButton/ConvertButton";
+import DropDownMenu from "../DropDownMenu/DropDownMenu";
 import { converter } from "../../scripts/converter";
 
 export default function TextBlock() {
@@ -24,11 +25,15 @@ export default function TextBlock() {
         onChange={handleInputChange}
       ></textarea>
 
-      <ConvertButton onClick={handleTransformClick}/>
+      <div className={styles.textBlock__centerBlock}>
 
-      <div className={styles.textBlock__outputBlock}>
-        {outputText}
+        <ConvertButton onClick={handleTransformClick} />
+
+        <DropDownMenu />
+
       </div>
+
+      <div className={styles.textBlock__outputBlock}>{outputText}</div>
     </div>
   );
 }

@@ -1,21 +1,25 @@
 .ConvertButton {
-    height: 30px;
-    width: 30%;
-    background: rgb(255, 255, 255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,22,22,0) 0%, rgba(36,3,3,0.4486045597484277) 100%, rgba(0,0,0,1) 100%);
-    border: 1px solid black;
+    font-weight: bold;
+    color: rgba(0, 255, 255, 0.5);
+    height: 80%;
+    width: 80%;
+    background: #333;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6) inset;
-    transition: .5s all;
+    box-shadow: 0px 1px 2px rgba(0, 255, 255, 0.5),
+        0px 2px 4px rgba(0, 255, 255, 0.5),
+        0px 4px 8px rgba(0, 255, 255, 0.5),
+        0px 8px 16px rgba(0, 255, 255, 0.5);
+    transition: .4s all;
 }
 
 .ConvertButton:hover {
     transform: scale(1.01);
-    opacity: .5;
+    box-shadow: 0px 2px 4px rgba(0, 255, 255, 0.7),
+        0px 4px 8px rgba(0, 255, 255, 0.5),
+        0px 8px 16px rgba(0, 255, 255, 0.5),
+        0px 12px 24px rgba(0, 255, 255, 0.5);
 }
 
 .ConvertButton:active {
-    transform: (1.03);
-    opacity: .3;
-    background-color: greenyellow;
+    transform: scale(1.02);
 }

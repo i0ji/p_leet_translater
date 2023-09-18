@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Electrolize', sans-serif;
+    font-size: 3vw;
 }
+
+
 
 #root {
     display: flex;
@@ -13,6 +19,7 @@
 }
  
 body {
+    background-color: #222;
     width: auto;
     height: 100vh;
     display: flex;
