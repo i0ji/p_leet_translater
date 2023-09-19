@@ -7,7 +7,7 @@ import { converter } from "../../scripts/converter";
 export default function TextBlock() {
   const [inputText, setInputText] = useState<string>("");
   const [outputText, setOutputText] = useState<string>("");
-  const [selectedLevel, setSelectedLevel] = useState<any>('sl');
+  const [selectedLevel, setSelectedLevel] = useState<any>('null');
 
   const handleLevelChange = (selectedLevel: any) => {
     setSelectedLevel(selectedLevel);
