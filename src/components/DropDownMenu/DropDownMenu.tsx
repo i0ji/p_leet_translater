@@ -16,6 +16,7 @@ export default function DropDownMenu(props: any) {
   return (
     <Select
       value={props.selectedLevel}
+      defaultValue={options[0]}
       onChange={handleLevelChange}
       options={options}
     />

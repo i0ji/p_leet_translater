@@ -100,5 +100,19 @@ export function converter(text: string, level: string): any {
                 .replace(letters.x, ')(')
                 .replace(letters.y, '`/')
                 .replace(letters.z, '7_')
+                break;
+                default: 
+                return convertedText = text
+                .replace(letters.a, '4')
+                .replace(letters.b, '8')
+                .replace(letters.e, '3')
+                .replace(letters.g, '9')
+                .replace(letters.i, '!')
+                .replace(letters.l, '1')
+                .replace(letters.o, '0')
+                .replace(letters.r, '2')
+                .replace(letters.s, '5')
+                .replace(letters.t, '7')
+                .replace(letters.z, '2')
     }
 }
