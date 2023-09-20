@@ -28,8 +28,8 @@ export default function TextBlock() {
       <textarea
         placeholder="Your text here"
         className={styles.text_block__input_block}
-        value={inputText}
         onChange={handleInputChange}
+        value={inputText}
       ></textarea>
 
       <div className={styles.text_block__center_block}>
