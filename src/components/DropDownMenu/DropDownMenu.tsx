@@ -1,6 +1,7 @@
-import React from "react";
-import "./DropDownMenu.scss";
 import Select from "react-select";
+import styles from "./DropDownMenu.module.scss";
+//import "./DropDownMenu.scss"
+// import { DropDownMenuStyles } from "./DropDownMenuStyles";
 
 const options = [
   { value: "sl", label: "s1mple l33t" },
@@ -15,10 +16,20 @@ export default function DropDownMenu(props: any) {
 
   return (
     <Select
+      classNames={{
+        control: (state) => {
+          state.isFocused ? "border-red-600" : "border-grey-300"},
+        option: () => {
+          backgroundColor: 'red'
+        }  
+      }}
       value={props.selectedLevel}
       defaultValue={options[0]}
       onChange={handleLevelChange}
       options={options}
+      // classNamePrefix={'dd'}
+      menuPlacement={"top"}
+      hideSelectedOptions={true}
     />
   );
 }
