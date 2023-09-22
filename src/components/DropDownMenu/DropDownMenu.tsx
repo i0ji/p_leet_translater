@@ -1,10 +1,10 @@
 import Select from "react-select";
-import styles from "./DropDownMenu.module.scss";
-//import "./DropDownMenu.scss"
-// import { DropDownMenuStyles } from "./DropDownMenuStyles";
+// import styles from "./DropDownMenu.module.scss";
+// import "./DropDownMenu.scss"
+import { DropDownMenuStyles } from "./DropDownMenuStyles";
 
 const options = [
-  { value: "sl", label: "s1mple l33t" },
+  { value: "sl", label: "5!mp13 1337" },
   { value: "ml", label: "^^1[)113 13\\/31" },
   { value: "hl", label: "|-|42[) 1337" },
 ];
@@ -16,20 +16,17 @@ export default function DropDownMenu(props: any) {
 
   return (
     <Select
-      classNames={{
-        control: (state) => {
-          state.isFocused ? "border-red-600" : "border-grey-300"},
-        option: () => {
-          backgroundColor: 'red'
-        }  
-      }}
+      styles={DropDownMenuStyles}
       value={props.selectedLevel}
       defaultValue={options[0]}
       onChange={handleLevelChange}
       options={options}
-      // classNamePrefix={'dd'}
       menuPlacement={"top"}
-      hideSelectedOptions={true}
+      hideSelectedOptions={false}
+      isSearchable={false}
+      menuPosition={'fixed'}
+      
+      // menuIsOpen={false}
     />
   );
 }
