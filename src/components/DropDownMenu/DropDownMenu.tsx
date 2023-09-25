@@ -26,7 +26,7 @@ export default function DropDownMenu(props: any) {
       isSearchable={false}
       menuPosition={'fixed'}
       
-      // menuIsOpen={false}
+      menuIsOpen={false}
     />
   );
 }
