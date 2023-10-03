@@ -39,7 +39,7 @@ export function converter(text: string, level: string): any {
                 .replace(letters.b, '8')
                 .replace(letters.e, '3')
                 .replace(letters.g, '9')
-                .replace(letters.i, '!')
+                .replace(letters.i, '1')
                 .replace(letters.l, '1')
                 .replace(letters.o, '0')
                 .replace(letters.r, '2')
@@ -58,15 +58,15 @@ export function converter(text: string, level: string): any {
                 .replace(letters.g, '9')
                 .replace(letters.h, '|-|')
                 .replace(letters.l, '1')
-                .replace(letters.m, '^^')
+                .replace(letters.m, '|V')
                 .replace(letters.n, '/\\/')
                 .replace(letters.o, '0')
-                .replace(letters.p, '|o')
+                .replace(letters.p, '|*')
                 .replace(letters.q, 'o|')
                 .replace(letters.r, '2')
                 .replace(letters.s, '5')
                 .replace(letters.t, '7')
-                .replace(letters.u, '|_|')
+                .replace(letters.u, '(_|')
                 .replace(letters.v, `\\/`)
                 .replace(letters.w, '(/\\)')
                 .replace(letters.x, '}{')
@@ -100,9 +100,9 @@ export function converter(text: string, level: string): any {
                 .replace(letters.x, ')(')
                 .replace(letters.y, '`/')
                 .replace(letters.z, '7_')
-                break;
-                default: 
-                return convertedText = text
+            break;
+        default:
+            return convertedText = text
                 .replace(letters.a, '4')
                 .replace(letters.b, '8')
                 .replace(letters.e, '3')

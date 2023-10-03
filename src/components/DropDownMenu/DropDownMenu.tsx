@@ -5,8 +5,8 @@ import { DropDownMenuStyles } from "./DropDownMenuStyles";
 
 const options = [
   { value: "sl", label: "5!mp13 1337" },
-  { value: "ml", label: "^^1[)113 13\\/31" },
-  { value: "hl", label: "|-|42[) 1337" },
+  { value: "ml", label: "|\\/|1[)[)13   13\\/31" },
+  { value: "hl", label: "#/-\\/2|) ([]/2|-"},
 ];
 
 export default function DropDownMenu(props: any) {
@@ -24,8 +24,8 @@ export default function DropDownMenu(props: any) {
       menuPlacement={"top"}
       hideSelectedOptions={false}
       isSearchable={false}
-      menuPosition={'fixed'}
-      //  menuIsOpen={true}
+      menuPosition={"fixed"}
+      // menuIsOpen={true}
     />
   );
 }
