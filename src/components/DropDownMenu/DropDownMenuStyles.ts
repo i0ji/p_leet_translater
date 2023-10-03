@@ -40,7 +40,6 @@ export const DropDownMenuStyles = {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        // border: '1px solid #333',
         margin: '10px 0',
         transition: 'all .5s ease-in-out',
         '&:hover': {
@@ -70,7 +69,9 @@ export const DropDownMenuStyles = {
         borderRadius: '50px',
         boxShadow: 'none',
     }),
-
+    indicatorSeparator: (styles: any, state: any) => ({
+        display: 'none',
+    })
 }
 
 
