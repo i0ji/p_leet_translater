@@ -14,13 +14,14 @@ export const DropDownMenuStyles = {
         border: 'none',
         color: 'black',
         transition: 'all 1s ease-in-out',
-        overflow: 'hidden'
+        overflow: 'hidden',
     }),
     control: (styles: any, state: any) => ({
         ...styles,
         '&:hover': {
             border: 'none',
             backgroundColor: leadTurq,
+
         },
         '&:active': {
             border: 'none',
@@ -50,14 +51,10 @@ export const DropDownMenuStyles = {
     }),
     menu: () => ({
         backgroundColor: midGrey,
-        // width: '100%',
         borderRadius: '20px',
         texAlign: 'center',
         display: 'flex',
         justifyContent: 'center',
-        '&:hover > menuList': {
-            display: 'none',
-        }
     }),
     menuList: () => ({
         width: '100%',
