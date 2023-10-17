@@ -24,8 +24,6 @@
         box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6) inset;
     }
 
-
-
     &__center_block {
         display: flex;
         flex-direction: column;
@@ -49,12 +47,8 @@
     }
 
     &__output_block:hover {
-        
-            box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6) inset;
-    
-    }
-}
 
-.text_block__input_block:hover {
         box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+
+    }
 }
