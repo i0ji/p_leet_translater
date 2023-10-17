@@ -1,8 +1,7 @@
+// noinspection JSUnusedLocalSymbols,JSUnusedGlobalSymbols
 
-const leadGrey = '#333';
 const midGrey = '#797777'
 const leadTurq = 'rgba(0, 255, 255, 0.5)';
-const testRed = 'red';
 
 export const DropDownMenuStyles = {
     container: () => ({
@@ -78,7 +77,6 @@ export const DropDownMenuStyles = {
     }),
     indicatorsContainer: (state: any) => ({
         width: '10%',
-        display: state.isActive ? 'none' : 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         transition: 'all .4s ease-in-out',

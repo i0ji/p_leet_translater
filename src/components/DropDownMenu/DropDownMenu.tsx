@@ -8,15 +8,15 @@ const options = [
   { value: "hl", label: "#/-\\/2|) ([]/2|-"},
 ];
 
-export default function DropDownMenu(props: any) {
+export default function DropDownMenu({onLevelChange, selectedLevel}: any) {
   const handleLevelChange = (selectedLevel: any) => {
-    props.onLevelChange(selectedLevel);
+    onLevelChange(selectedLevel);
   };
 
   return (
     <Select
       styles={DropDownMenuStyles}
-      value={props.selectedLevel}
+      value={selectedLevel}
       defaultValue={options[0]}
       onChange={handleLevelChange}
       options={options}
@@ -24,7 +24,6 @@ export default function DropDownMenu(props: any) {
       hideSelectedOptions={false}
       isSearchable={false}
       menuPosition={"fixed"}
-      // menuIsOpen={true}
     />
   );
 }

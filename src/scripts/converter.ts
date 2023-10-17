@@ -1,5 +1,3 @@
-import TextBlock from "../components/TextBlock/TextBlock";
-
 export function converter(text: string, level: string): any {
 
     let convertedText: string;
@@ -46,7 +44,6 @@ export function converter(text: string, level: string): any {
                 .replace(letters.s, '5')
                 .replace(letters.t, '7')
                 .replace(letters.z, '2')
-            break;
         case 'ml':
             return convertedText = text
                 .replace(letters.a, '4')
@@ -100,7 +97,6 @@ export function converter(text: string, level: string): any {
                 .replace(letters.x, ')(')
                 .replace(letters.y, '`/')
                 .replace(letters.z, '7_')
-            break;
         default:
             return convertedText = text
                 .replace(letters.a, '4')
