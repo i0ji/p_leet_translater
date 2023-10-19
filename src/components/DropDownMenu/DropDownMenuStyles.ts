@@ -3,6 +3,11 @@
 const midGrey = '#797777'
 const leadTurq = 'rgba(0, 255, 255, 0.5)';
 
+
+interface IFocused  {
+    isFocused: boolean;
+}
+
 export const DropDownMenuStyles = {
     container: () => ({
         display: 'flex',
@@ -15,7 +20,7 @@ export const DropDownMenuStyles = {
         transition: 'all 1s ease-in-out',
         overflow: 'hidden',
     }),
-    control: (styles: any, state: any) => ({
+    control: (styles: object, state: IFocused) => ({
         ...styles,
         '&:hover': {
             border: 'none',
@@ -34,7 +39,7 @@ export const DropDownMenuStyles = {
         border: 'none',
         textAlign: 'center',
     }),
-    option: (styles: any, state: any) => ({
+    option: (state: IFocused) => ({
         width: '90%',
         backgroundColor: state.isFocused ? leadTurq : midGrey,
         borderRadius: '15px',
@@ -65,17 +70,17 @@ export const DropDownMenuStyles = {
         alignItems: 'center',
         flexFlow: 'column'
     }),
-    menuPortal: (styles: any, state: any) => ({
+    menuPortal: (styles: object) => ({
         ...styles,
         top: '38%',
         position: 'fixed',
         borderRadius: '50px',
         boxShadow: 'none',
     }),
-    indicatorSeparator: (styles: any, state: any) => ({
+    indicatorSeparator: () => ({
         display: 'none',
     }),
-    indicatorsContainer: (state: any) => ({
+    indicatorsContainer: () => ({
         width: '10%',
         justifyContent: 'center',
         alignItems: 'center',

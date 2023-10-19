@@ -1,6 +1,6 @@
 export function converter(text: string, level: string): any {
 
-    let _convertedText;
+    let convertedText: string;
 
     const letters = {
         a: /[aA]/g,
@@ -32,7 +32,7 @@ export function converter(text: string, level: string): any {
     }
     switch (level) {
         case 'sl':
-            return _convertedText = text
+            return convertedText = text
                 .replace(letters.a, '4')
                 .replace(letters.b, '8')
                 .replace(letters.e, '3')
@@ -45,7 +45,7 @@ export function converter(text: string, level: string): any {
                 .replace(letters.t, '7')
                 .replace(letters.z, '2')
         case 'ml':
-            return _convertedText = text
+            return convertedText = text
                 .replace(letters.a, '4')
                 .replace(letters.b, '8')
                 .replace(letters.c, '(')
@@ -70,7 +70,7 @@ export function converter(text: string, level: string): any {
                 .replace(letters.y, '`/')
                 .replace(letters.z, '2')
         case 'hl':
-            return _convertedText = text
+            return convertedText = text
                 .replace(letters.a, '/-\\')
                 .replace(letters.b, '|3')
                 .replace(letters.c, '(')
@@ -98,7 +98,7 @@ export function converter(text: string, level: string): any {
                 .replace(letters.y, '`/')
                 .replace(letters.z, '7_')
         default:
-            return _convertedText = text
+            return convertedText = text
                 .replace(letters.a, '4')
                 .replace(letters.b, '8')
                 .replace(letters.e, '3')

@@ -1,5 +1,6 @@
-import { defineConfig } from 'vite'
+// noinspection JSUnusedGlobalSymbols
 
+import { defineConfig } from 'vite'
 
 export default defineConfig({
   // plugins: [react()],
