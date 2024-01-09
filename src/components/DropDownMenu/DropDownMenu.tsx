@@ -2,8 +2,9 @@ import Select from "react-select";
 import * as int from "../../Interface"
 import { DropDownMenuStyles } from "./DropDownMenuStyles";
 
+export default function DropDownMenu({onLevelChange, selectedLevel}: int.IDropDownProps) {
 
-export default function DropDownMenu({onLevelChange, selectedLevel}: {onLevelChange: int.IOptions, selectedLevel: int.IOptions}) {
+
 
     const handleLevelChange = (selectedLevel: int.IOptions): void => {
         onLevelChange(selectedLevel);
@@ -30,6 +31,7 @@ export default function DropDownMenu({onLevelChange, selectedLevel}: {onLevelCha
     return (
         <Select
             {...attributes}
+
         />
     );
 }

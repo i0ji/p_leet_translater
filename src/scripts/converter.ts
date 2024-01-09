@@ -1,4 +1,4 @@
-export function converter(text: string, level: string): any {
+export function converter(text: string, level: string): string {
 
     let convertedText: string;
 

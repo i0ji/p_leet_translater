@@ -4,18 +4,16 @@ import ConvertButton from "../ConverterButton/ConverterButton";
 import DropDownMenu from "../DropDownMenu/DropDownMenu";
 import {converter} from '../../scripts/converter.ts';
 import * as int from "../../Interface";
-import {IOptions} from "../../Interface";
 
 export default function TextBlock() {
     const [inputText, setInputText] = useState<string>("");
     const [outputText, setOutputText] = useState<string>("");
 
-    const initialStateLevel: IOptions = {value: "sl", label: "5!mp13 1337"};
+    const initialStateLevel: int.IOptions = {value: "sl", label: "5!mp13 1337"};
     const [selectedLevel, setSelectedLevel] = useState<int.IOptions>(initialStateLevel);
 
-    const handleLevelChange = (selectedLevel: int.IOptions): IOptions | void => {
-        setSelectedLevel(selectedLevel);
-        console.log(selectedLevel.value);
+    const handleLevelChange = (selectedLevel: int.IOptions) => {
+         setSelectedLevel(selectedLevel);
     };
 
     const handleInputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
