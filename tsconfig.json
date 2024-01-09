@@ -8,12 +8,20 @@
 
     /* Bundler mode */
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
+    "allowImportingTsExtensions": false,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
 
+
+    "baseUrl": "src",
+    "paths": {
+      "components/*" : ["components/*"],
+      "scripts/*" : ["scripts/*"],
+      "styles/*" : ["styles/*"],
+      "src/*" : ["./*"]
+    },
     /* Linting */
     "strict": true,
     "noUnusedLocals": false,
@@ -21,6 +29,5 @@
     "noFallthroughCasesInSwitch": true
   },
   "include": ["src",
-  "vite.config.ts"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "vite.config.ts"]
 }

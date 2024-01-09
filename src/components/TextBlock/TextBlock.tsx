@@ -1,9 +1,9 @@
 import React, {useState} from "react";
-import styles from "./TextBlock.module.scss";
-import ConvertButton from "../ConverterButton/ConverterButton";
-import DropDownMenu from "../DropDownMenu/DropDownMenu";
-import {converter} from '../../scripts/converter.ts';
-import * as int from "../../Interface";
+import styles from "src/TextBlock.module.scss";
+import ConvertButton from "components/ConverterButton/ConverterButton";
+import DropDownMenu from "components/DropDownMenu/DropDownMenu";
+import {converter} from "scripts/converter";
+import * as int from "src/Interface";
 
 export default function TextBlock() {
     const [inputText, setInputText] = useState<string>("");

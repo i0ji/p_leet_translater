@@ -1,3 +1,5 @@
+// noinspection JSUnusedGlobalSymbols
+
 const midGrey = '#797777'
 const leadTurq = 'rgba(0, 255, 255, 0.5)';
 

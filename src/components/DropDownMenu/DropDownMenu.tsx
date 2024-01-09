@@ -1,6 +1,7 @@
 import Select from "react-select";
 import * as int from "../../Interface";
 import {DropDownMenuStyles} from "./DropDownMenuStyles";
+import React from "react";
 
 export default function DropDownMenu({onLevelChange, selectedLevel}: int.IDropDownProps) {
 
