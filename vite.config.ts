@@ -3,5 +3,13 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  // plugins: [react()],
+    base: './',
+    resolve: {
+        alias: {
+            components: "/src/components",
+            scripts: "/src/scripts",
+            styles: "/src/styles",
+            src: "."
+        }
+    }
 })

@@ -8,12 +8,11 @@ import * as int from "../../Interface";
 export default function TextBlock() {
     const [inputText, setInputText] = useState<string>("");
     const [outputText, setOutputText] = useState<string>("");
-
     const initialStateLevel: int.IOptions = {value: "sl", label: "5!mp13 1337"};
     const [selectedLevel, setSelectedLevel] = useState<int.IOptions>(initialStateLevel);
 
     const handleLevelChange = (selectedLevel: int.IOptions) => {
-         setSelectedLevel(selectedLevel);
+        setSelectedLevel(selectedLevel);
     };
 
     const handleInputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
@@ -35,7 +34,6 @@ export default function TextBlock() {
 
             <div className={styles.text_block__center_block}>
                 <ConvertButton onClick={handleTransformClick}/>
-
                 <DropDownMenu onLevelChange={handleLevelChange} selectedLevel={selectedLevel}/>
             </div>
 
