@@ -1,5 +1,4 @@
 import Select from "react-select";
-import { useState } from "react";
 
 import { DropDownMenuStyles } from "./DropDownMenuStyles";
 

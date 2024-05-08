@@ -1,8 +1,5 @@
-
-const leadGrey = '#333';
 const midGrey = '#797777'
 const leadTurq = 'rgba(0, 255, 255, 0.5)';
-const testRed = 'red';
 
 export const DropDownMenuStyles = {
     container: () => ({
