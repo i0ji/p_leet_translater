@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.3176ba80.css",
-    "main.js": "/static/js/main.5c7a7493.js",
-    "index.html": "/index.html",
-    "main.3176ba80.css.map": "/static/css/main.3176ba80.css.map",
-    "main.5c7a7493.js.map": "/static/js/main.5c7a7493.js.map"
+    "main.css": "/p_leet_translater/static/css/main.3176ba80.css",
+    "main.js": "/p_leet_translater/static/js/main.5c7a7493.js",
+    "index.html": "/p_leet_translater/index.html",
+    "main.3176ba80.css.map": "/p_leet_translater/static/css/main.3176ba80.css.map",
+    "main.5c7a7493.js.map": "/p_leet_translater/static/js/main.5c7a7493.js.map"
   },
   "entrypoints": [
     "static/css/main.3176ba80.css",
