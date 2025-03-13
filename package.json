@@ -4,13 +4,13 @@
   "private": true,
   "homepage": "https://i0ji.github.io/p_leet_translater/",
   "dependencies": {
-    "@types/node": "20.12.10",
-    "@types/react": "18.3.1",
-    "@types/react-dom": "18.3.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-scripts": "5.0.1",
-    "typescript": "^5.4.5"
+    "@types/node": "22.13.10",
+    "@types/react": "19.0.10",
+    "@types/react-dom": "19.0.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-scripts": "^5.0.1",
+    "typescript": "^5.8.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -20,14 +20,14 @@
     "deploy": "gh-pages -d build"
   },
   "devDependencies": {
-    "@babel/core": "^7.24.5",
+    "@babel/core": "^7.26.10",
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "@babel/plugin-syntax-flow": "^7.24.1",
-    "@babel/plugin-transform-react-jsx": "^7.23.4",
+    "@babel/plugin-syntax-flow": "^7.26.0",
+    "@babel/plugin-transform-react-jsx": "^7.25.9",
     "@types/gh-pages": "^6",
-    "gh-pages": "^6.1.1",
-    "react-select": "^5.8.0",
-    "sass": "^1.77.0",
+    "gh-pages": "^6.3.0",
+    "react-select": "^5.10.1",
+    "sass": "^1.85.1",
     "yarn-check": "^0.0.3"
   },
   "browserslist": [
@@ -38,5 +38,5 @@
   "peerDependencies": {
     "typescript": "*"
   },
-  "packageManager": "yarn@4.2.1"
+  "packageManager": "yarn@1.22.22"
 }
