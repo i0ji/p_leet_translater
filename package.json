@@ -18,9 +18,7 @@
     "start": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@babel/core": "^7.26.10",
