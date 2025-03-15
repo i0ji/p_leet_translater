@@ -1,8 +1,9 @@
 {
   "name": "0N11N3 1337 C0NV3R73R",
-  "short_name": "App",
-  "start_url": ".",
+  "short_name": "1337",
+  "description": "HARD LEET CONVERTER",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#ffffff"
+  "theme_color": "#4285f4"
 }
