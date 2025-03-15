@@ -10,7 +10,6 @@
 
 # production
 /build
-/dist
 
 # misc
 /test_folder
