@@ -5,14 +5,14 @@
   "homepage": "https://i0ji.github.io/p_leet_translater/",
   "type": "module",
   "dependencies": {
-    "@types/node": "22.13.10",
-    "@types/react": "^19.0.10",
-    "@types/react-dom": "^19.0.4",
-    "@vitejs/plugin-react": "^4.3.4",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "typescript": "^5.8.2",
-    "vite": "^6.2.2"
+    "@types/node": "24.0.7",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^4.6.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "typescript": "^5.8.3",
+    "vite": "^7.0.0"
   },
   "scripts": {
     "start": "vite",
@@ -21,14 +21,14 @@
     "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
-    "@babel/core": "^7.26.10",
+    "@babel/core": "^7.27.7",
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "@babel/plugin-syntax-flow": "^7.26.0",
-    "@babel/plugin-transform-react-jsx": "^7.25.9",
+    "@babel/plugin-syntax-flow": "^7.27.1",
+    "@babel/plugin-transform-react-jsx": "^7.27.1",
     "@types/gh-pages": "^6",
     "gh-pages": "^6.3.0",
     "react-select": "^5.10.1",
-    "sass": "^1.85.1",
+    "sass": "^1.89.2",
     "yarn-check": "^0.0.3"
   },
   "browserslist": [

@@ -11,7 +11,7 @@ export default function TextBlock() {
     const [selectedLevel, setSelectedLevel] = useState<any>("sl");
 
     const handleLevelChange = (selectedLevel: any) => {
-        setSelectedLevel(selectedLevel);
+            setSelectedLevel(selectedLevel);
         console.log(selectedLevel.value);
     };
 
