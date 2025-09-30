@@ -5,14 +5,14 @@
   "homepage": "https://i0ji.github.io/p_leet_translater/",
   "type": "module",
   "dependencies": {
-    "@types/node": "24.1.0",
-    "@types/react": "^19.1.9",
-    "@types/react-dom": "^19.1.7",
-    "@vitejs/plugin-react": "^4.7.0",
+    "@types/node": "24.6.0",
+    "@types/react": "^19.1.16",
+    "@types/react-dom": "^19.1.9",
+    "@vitejs/plugin-react": "^5.0.4",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "typescript": "^5.8.3",
-    "vite": "^7.0.6"
+    "typescript": "^5.9.2",
+    "vite": "^7.1.7"
   },
   "scripts": {
     "start": "vite",
@@ -24,7 +24,7 @@
     "@types/gh-pages": "^6",
     "gh-pages": "^6.3.0",
     "react-select": "^5.10.2",
-    "sass": "^1.89.2"
+    "sass": "^1.93.2"
   },
   "browserslist": [
     ">0.2%",
