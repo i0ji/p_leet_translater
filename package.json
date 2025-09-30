@@ -19,16 +19,6 @@
     "build": "vite build",
     "serve": "vite preview"
   },
-  "dependencies": {
-    "@types/node": "24.5.0",
-    "@types/react": "^19.1.13",
-    "@types/react-dom": "^19.1.9",
-    "@vitejs/plugin-react": "^5.0.2",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1",
-    "typescript": "^5.9.2",
-    "vite": "^7.1.5"
-  },
   "devDependencies": {
     "@types/gh-pages": "^6",
     "gh-pages": "^6.3.0",
